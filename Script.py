@@ -62,7 +62,7 @@ email = df.loc["E-mail"]['Value']
 ############################################
 
 driver = Chrome()                                             # Create the Bot
-driver.get("https://visa.vfsglobal.com/tur/en/pol/login")
+driver.get("https://row2.vfsglobal.com/GAPolandAppt/Account/RegisteredLogin?q=shSA0YnE4pLF9Xzwon/x/ASnHZRMROGDyz5YljrTPrmbws9m3YKnjDXuh/15KyMksdtUgr/FOny2C0bQ3U4uiw==")
 
 
 
@@ -162,7 +162,7 @@ for i in range(10000000000):         # We will check for 10000000000 times. This
 
                 sleep(2)          # If it does not wait for a while, it does not click to the next dropdown        
                 WebDriverWait(driver, 20).until(EC.element_to_be_clickable((By.XPATH, "//div/span[contains(., 'Select' )]"))).click()
-                WebDriverWait(driver, 20).until(EC.element_to_be_clickable((By.XPATH, "//mat-option/span[contains(., 'Turkiye')]"))).click()
+                WebDriverWait(driver, 20).until(EC.element_to_be_clickable((By.XPATH, "//mat-option/span[contains(., 'India')]"))).click()
 
                 # Since it created problems, I moved non-dropdown ones after the dropdown ones
                 driver.find_element(By.XPATH, "//input[@placeholder='Enter your first name']").send_keys(first_name)
@@ -185,7 +185,7 @@ for i in range(10000000000):         # We will check for 10000000000 times. This
 
                 sleep(2)
                 WebDriverWait(driver, 20).until(EC.element_to_be_clickable((By.XPATH, "//div/span[contains(., 'sub-category' )]"))).click()
-                WebDriverWait(driver, 20).until(EC.element_to_be_clickable((By.XPATH, "//mat-option/span[contains(., 'Turkish')]"))).click() 
+                WebDriverWait(driver, 20).until(EC.element_to_be_clickable((By.XPATH, "//mat-option/span[contains(., 'India')]"))).click() 
 
                 sleep(2)
                 WebDriverWait(driver, 20).until(EC.element_to_be_clickable((By.XPATH, "//div/span[contains(., 'Application Centre' )]"))).click()
